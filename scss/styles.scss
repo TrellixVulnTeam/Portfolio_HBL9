@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #000000, #030001, #060001, #090001, #0c0001, #22090c, #340e13, #470e17, #740a1d, #a3001e, #d10018, #ff0000);
+    background-size: 400% 400%;
+    animation-name: cambiar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-inicio {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 2rem;
+    color: black;
+    text-align: center;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Caveat', cursive;
+font-family: 'Press Start 2P', cursive;
+}
+.resaltar{
+    color: white;
+    font-family: 'Splash', cursive;
+    font-size: 40px;
+}
+.button{
+    border: solid 2px white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    margin: 0 0 53px 0;
+    padding: 20px;
+    transition: all 0.5s;
+    background-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.button:hover{
+    background-color: #A3001D;
+    animation: opacidad 1s 1;
+}
+
+@keyframes cambiar{
+    0%{background-position: 50% 0%;}
+    50%{background-position: 50% 100%;}
+    100%{background-position: 50% 0%;}
+}
+
+@keyframes opacidad{
+    0%{opacity: 10%;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: #A3001D;
+    position: relative;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    padding: 15px;
+}
+
+.nav-item{
+    list-style: none;
+    
+}
+
+.nav-link{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.Acerca-de-mi{
+    width: 100%;
+    background-color: white;
+    height: 600px;
+}
+
+.acerca{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.iconos-sobre-mi {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.circulo-1{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.circulo-2{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.circulo {
+    background-color: #A3001D;
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.acercaicon{
+    font-size: 50px;
+    margin: 30px;
+}
+
+.card-acerca{
+    display: flex;
+    height: 230px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo-card{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.skills{
+    height: 394px;
+    display: flex;
+}
+
+.info-yo{
+    width: 590px;
+    height: 394px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fotome{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    border-radius: 150px;
+    position: relative;
+    margin: 15px;
+}
+
+.habilidades{
+    width: 590px;
+    background-color: yellow;
+    height: 394px;
+    position: relative;
+}
+
+.bar{
+    position: relative;
+}
+
+.bar span{
+    display: initial;
+}
+
+.fill{
+    width: 90%;
+    background-color: red;
+}
+
+.tag {
+    height: 28px;
+    width: 110px;
+    background-color: greenyellow;
+}
