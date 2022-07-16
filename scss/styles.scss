@@ -9,7 +9,8 @@ $font6: 'Raleway', sans-serif;
 $color1: #A3001D;
 $color2: #fff;
 $color3: #000;
-$color4: #808080;
+$color4: #838384;
+$color5: #C55A5A;
 
 
 *{
@@ -127,17 +128,30 @@ body{
     background-color: #000;
 }
 
+//Acerca de mi Circulos///
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+}
 .Acerca-de-mi{
     width: 100%;
     height: 600px;
+    position: relative;
 }
 
-.acerca{
+.titulo-section{
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 50px;
     font-size: 30px;
+    font-weight: 700;
+    font-family: $font4;
+    color: $color2;
 }
 
 .iconos-sobre-mi {
@@ -159,7 +173,7 @@ body{
 }
 
 .circulo {
-    background-color: #A3001D;
+    background-color: $color1;
     width: 125px;
     height: 125px;
     border-radius: 75px;
@@ -171,6 +185,7 @@ body{
 .acercaicon{
     font-size: 50px;
     margin: 30px;
+    color: $color2;
 }
 
 p{
@@ -179,9 +194,11 @@ p{
 }
 
 .titulo-card{
-    color: grey;
+    color: $color4;
     font-family: $font6;
     font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .card-acerca{
@@ -193,21 +210,13 @@ p{
     align-items: center;
 }
 
-.titulo-card{
-    font-size: 24px;
-    margin-bottom: 5px;
-}
 
-.container{
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 10px;
-}
+//Foto Acerda de mi////
 
 .skills{
     height: 394px;
     display: flex;
+    margin-top: 200px;
 }
 
 .info-yo{
@@ -221,15 +230,22 @@ p{
 }
 
 .fotome{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: $color1;
-    border-radius: 150px;
+    border-radius: 225px;
     position: relative;
     margin: 15px;
     background-image: url("../images/1655346792069.jfif");
-    background-position: center;
+    background-size: contain;
 }
+
+.text-card{
+    font-family: $font5;
+    font-weight: 500;
+}
+
+///Barra Skills///
 
 .habilidades{
     width: 590px;
@@ -261,18 +277,243 @@ p{
     align-items: flex-end;
 }
 
+.html{
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+
+.js {
+    width: 60%;
+}
+
+.react{
+    width: 50%;
+}
+
+.logotecno{
+    font-size: 25px;
+    padding: 1px;
+    text-align: center;
+    padding-right: 5px;
+}
+
 .tag {
-    height: 28px;
+    height: 30px;
     width: 110px;
     background-color: $color1;
-    display: flex;
-    justify-content: center;
     font-family: $font5;
     font-weight: bold;
+    color: $color2;
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
 
 }
 
 .nivelskill{
-    font-size: 15px;
+    font-size: 20px;
     color: $color2;
+    font-family: $font4;
+    margin-left: 10px;
 }
+
+//Tecnologias//
+
+///Proyectos///
+
+//Contacto//
+.contacto{
+    width: 100%;
+    background-color: black;
+    position: relative;
+
+}
+
+.titulo-contacto{
+    width: 100%;
+    background: $color1;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: $font4;
+    position: relative;
+    text-align: center;
+}
+
+#onda {
+    display: flex;
+    position: relative;
+}
+
+//Formulario//
+.login-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, 1%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: $color2;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: $color2;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: $color1;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $color1,
+                0 0 25px $color1,
+                0 0 50px $color1,
+                0 0 100px $color1;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $color4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, $color4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, $color4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, $color4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  textarea{
+    resize: none;
+    background: transparent;
+    color: white;
+    width: 310px;
+    height: 200px;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 5px;
+    border-color: $color2;
+  }
