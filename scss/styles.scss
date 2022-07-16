@@ -293,7 +293,7 @@ p{
     width: 50%;
 }
 
-.logotecno{
+.logoskills{
     font-size: 25px;
     padding: 1px;
     text-align: center;
@@ -322,6 +322,43 @@ p{
 
 //Tecnologias//
 
+.slider {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 150px;
+    margin: 10px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+.logotecno{
+    
+}
 ///Proyectos///
 
 //Contacto//
@@ -329,7 +366,6 @@ p{
     width: 100%;
     background-color: black;
     position: relative;
-
 }
 
 .titulo-contacto{
