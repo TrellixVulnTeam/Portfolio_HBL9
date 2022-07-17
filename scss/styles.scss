@@ -1,10 +1,16 @@
 /*Fuentes*/
-$font1: 'Kaushan Script', cursive;
-$font2: 'Press Start 2P', cursive;
-$font3: 'Caveat', cursive;
-$font4: 'Secular One', sans-serif;
-$font5: 'Raleway', sans-serif;
-$font6: 'Raleway', sans-serif;
+$font1: 'Kaushan Script',
+cursive;
+$font2: 'Press Start 2P',
+cursive;
+$font3: 'Caveat',
+cursive;
+$font4: 'Secular One',
+sans-serif;
+$font5: 'Raleway',
+sans-serif;
+$font6: 'Raleway',
+sans-serif;
 /*PaLeta de Colores */
 $color1: #A3001D;
 $color2: #fff;
@@ -13,12 +19,13 @@ $color4: #838384;
 $color5: #C55A5A;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-main{
+
+main {
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -33,6 +40,7 @@ main{
     flex-direction: column;
     justify-content: center;
 }
+
 .flex {
     display: flex;
     align-items: center;
@@ -48,14 +56,16 @@ main{
     text-align: center;
     /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Caveat', cursive;
-font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
-.resaltar{
+
+.resaltar {
     color: white;
     font-family: 'Splash', cursive;
     font-size: 40px;
 }
-.button{
+
+.button {
     border: solid 2px white;
     text-align: center;
     cursor: pointer;
@@ -69,21 +79,37 @@ font-family: 'Press Start 2P', cursive;
     font-family: 'Kaushan Script', cursive;
 }
 
-.button:hover{
+.button:hover {
     background-color: #A3001D;
     animation: opacidad 1s 1;
 }
 
-@keyframes cambiar{
-    0%{background-position: 50% 0%;}
-    50%{background-position: 50% 100%;}
-    100%{background-position: 50% 0%;}
+@keyframes cambiar {
+    0% {
+        background-position: 50% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
 }
 
-@keyframes opacidad{
-    0%{opacity: 10%;}
-    50%{opacity: 50%;}
-    100%{opacity: 100%;}
+@keyframes opacidad {
+    0% {
+        opacity: 10%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .navbar {
@@ -93,22 +119,22 @@ font-family: 'Press Start 2P', cursive;
     position: relative;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     display: flex;
-    flex-direction:row;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
     padding: 15px;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
-    
+
 }
 
-.nav-link{
+.nav-link {
     list-style: none;
     text-decoration: none;
     padding: 10px;
@@ -118,32 +144,33 @@ font-family: 'Press Start 2P', cursive;
     font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: white;
     background-color: #000000;
     border-radius: 5px;
 }
 
-body{
+body {
     background-color: #000;
 }
 
 //Acerca de mi Circulos///
 
-.container{
+.container {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
     padding: 0 10px;
     position: relative;
 }
-.Acerca-de-mi{
+
+.Acerca-de-mi {
     width: 100%;
     height: 600px;
     position: relative;
 }
 
-.titulo-section{
+.titulo-section {
     position: relative;
     display: flex;
     justify-content: center;
@@ -161,12 +188,13 @@ body{
     margin-bottom: 30px;
 }
 
-.circulo-1{
+.circulo-1 {
     display: flex;
     position: relative;
     flex-direction: row;
 }
-.circulo-2{
+
+.circulo-2 {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -182,18 +210,18 @@ body{
     justify-content: center;
 }
 
-.acercaicon{
+.acercaicon {
     font-size: 50px;
     margin: 30px;
     color: $color2;
 }
 
-p{
+p {
     color: $color2;
     font-family: $font6;
 }
 
-.titulo-card{
+.titulo-card {
     color: $color4;
     font-family: $font6;
     font-weight: bold;
@@ -201,7 +229,7 @@ p{
     margin-bottom: 5px;
 }
 
-.card-acerca{
+.card-acerca {
     display: flex;
     height: 230px;
     flex-direction: column;
@@ -213,13 +241,13 @@ p{
 
 //Foto Acerda de mi////
 
-.skills{
+.skills {
     height: 394px;
     display: flex;
     margin-top: 200px;
 }
 
-.info-yo{
+.info-yo {
     width: 590px;
     height: 394px;
     position: relative;
@@ -229,7 +257,7 @@ p{
     text-align: center;
 }
 
-.fotome{
+.fotome {
     height: 300px;
     width: 300px;
     background-color: $color1;
@@ -240,14 +268,14 @@ p{
     background-size: contain;
 }
 
-.text-card{
+.text-card {
     font-family: $font5;
     font-weight: 500;
 }
 
 ///Barra Skills///
 
-.habilidades{
+.habilidades {
     width: 590px;
     height: 394px;
     position: relative;
@@ -256,14 +284,14 @@ p{
     margin-left: 10px;
 }
 
-.bar{
+.bar {
     position: relative;
     display: flex;
     flex-direction: row;
     margin: 4px;
 }
 
-.barra{
+.barra {
     display: flex;
     align-items: flex-start;
     width: 90%;
@@ -272,12 +300,12 @@ p{
     flex-direction: column;
 }
 
-.bar span{
+.bar span {
     display: initial;
     align-items: flex-end;
 }
 
-.html{
+.html {
     width: 90%;
 }
 
@@ -289,11 +317,11 @@ p{
     width: 60%;
 }
 
-.react{
+.react {
     width: 50%;
 }
 
-.logoskills{
+.logoskills {
     font-size: 25px;
     padding: 1px;
     text-align: center;
@@ -313,7 +341,7 @@ p{
 
 }
 
-.nivelskill{
+.nivelskill {
     font-size: 20px;
     color: $color2;
     font-family: $font4;
@@ -350,25 +378,23 @@ p{
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
     }
 }
 
-.logotecno{
-    
-}
 ///Proyectos///
 
 //Contacto//
-.contacto{
+.contacto {
     width: 100%;
     background-color: black;
     position: relative;
 }
 
-.titulo-contacto{
+.titulo-contacto {
     width: 100%;
     background: $color1;
     font-size: 30px;
@@ -376,6 +402,7 @@ p{
     font-family: $font4;
     position: relative;
     text-align: center;
+    height: 700px;
 }
 
 #onda {
@@ -386,14 +413,13 @@ p{
 //Formulario//
 .login-box {
     position: relative;
-    top: 50%;
     left: 50%;
     width: 400px;
     padding: 40px;
     transform: translate(-50%, 1%);
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
 }
 
@@ -419,26 +445,27 @@ p{
     outline: none;
     background: transparent;
 }
+
 .login-box .user-box label {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     padding: 10px 0;
     font-size: 16px;
     color: #fff;
     pointer-events: none;
     transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
     top: -20px;
     left: 0;
     color: white;
     font-size: 12px;
-  }
-  
-  .login-box form a {
+}
+
+.login-box form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -450,42 +477,44 @@ p{
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
+}
+
+.login-box a:hover {
     background: $color1;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px $color1,
-                0 0 25px $color1,
-                0 0 50px $color1,
-                0 0 100px $color1;
-  }
-  
-  .login-box a span {
+        0 0 25px $color1,
+        0 0 50px $color1,
+        0 0 100px $color1;
+}
+
+.login-box a span {
     position: absolute;
     display: block;
-  }
-  
-  .login-box a span:nth-child(1) {
+}
+
+.login-box a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, $color4);
     animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
+}
+
+@keyframes btn-anim1 {
     0% {
-      left: -100%;
+        left: -100%;
     }
-    50%,100% {
-      left: 100%;
+
+    50%,
+    100% {
+        left: 100%;
     }
-  }
-  
-  .login-box a span:nth-child(2) {
+}
+
+.login-box a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -493,18 +522,20 @@ p{
     background: linear-gradient(180deg, transparent, $color4);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
+}
+
+@keyframes btn-anim2 {
     0% {
-      top: -100%;
+        top: -100%;
     }
-    50%,100% {
-      top: 100%;
+
+    50%,
+    100% {
+        top: 100%;
     }
-  }
-  
-  .login-box a span:nth-child(3) {
+}
+
+.login-box a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -512,18 +543,20 @@ p{
     background: linear-gradient(270deg, transparent, $color4);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
+}
+
+@keyframes btn-anim3 {
     0% {
-      right: -100%;
+        right: -100%;
     }
-    50%,100% {
-      right: 100%;
+
+    50%,
+    100% {
+        right: 100%;
     }
-  }
-  
-  .login-box a span:nth-child(4) {
+}
+
+.login-box a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -531,18 +564,20 @@ p{
     background: linear-gradient(360deg, transparent, $color4);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
+}
+
+@keyframes btn-anim4 {
     0% {
-      bottom: -100%;
+        bottom: -100%;
     }
-    50%,100% {
-      bottom: 100%;
+
+    50%,
+    100% {
+        bottom: 100%;
     }
-  }
-  
-  textarea{
+}
+
+textarea {
     resize: none;
     background: transparent;
     color: white;
@@ -552,4 +587,54 @@ p{
     font-weight: 700;
     padding: 5px;
     border-color: $color2;
-  }
+}
+
+
+/// redes ////@at-root
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 6em;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+        2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+        inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+        inset 2px 2px 10px #00000080;
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 40px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+        0 0 200px #0072ff;
+}
+
+#twitter {
+    animation-delay: 0.3s;
+}
+
+#facebook {
+    animation-delay: 0.7s;
+}
+
+#github {
+    animation-delay: 0.1s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
